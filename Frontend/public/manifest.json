@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "Student Buddy - DSA Problem Helper",
+  "version": "1.0.1",
+  "description": "Get progressive hints and pseudo-code for coding problems on LeetCode, HackerRank, and other platforms",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://leetcode.com/*",
+    "https://www.leetcode.com/*",
+    "https://www.hackerrank.com/*",
+    "https://codeforces.com/*",
+    "https://www.codechef.com/*",
+    "https://atcoder.jp/*"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Student Buddy"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://leetcode.com/problems/*",
+        "https://www.leetcode.com/problems/*"
+      ],
+      "js": ["content-scripts/leetcode.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://www.hackerrank.com/challenges/*"
+      ],
+      "js": ["content-scripts/hackerrank.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://codeforces.com/problem/*",
+        "https://codeforces.com/contest/*/problem/*"
+      ],
+      "js": ["content-scripts/codeforces.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["content-scripts/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
