@@ -1,4 +1,4 @@
-[# 🎓 Student Buddy  
+# 🎓 Student Buddy  
 
 **Student Buddy** is a Chrome Extension that acts as a smart learning companion for coding practice. It integrates directly with popular coding platforms and provides **AI-powered hints, explanations, and solutions**—ensuring students never feel stuck.  
 
