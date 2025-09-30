@@ -33,7 +33,7 @@ Unlike traditional single-model tools, **Student Buddy is powered by [SambaNova 
 
 ## 📹 Demo  
 
-🎥 [Watch the Demo Video][(YOUR_VIDEO_LINK_HERE](https://cap.so/s/fm6fank1ma125yx))  
+🎥 [Watch the Demo Video](https://cap.so/s/fm6fank1ma125yx))  
 
 ---
 
