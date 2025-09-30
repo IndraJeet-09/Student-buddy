@@ -1,122 +1,169 @@
-# Student-Buddy
+[# 🎓 Student Buddy  
 
-A comprehensive learning assistant that integrates with popular coding platforms to enhance your learning experience.
+**Student Buddy** is a Chrome Extension that acts as a smart learning companion for coding practice. It integrates directly with popular coding platforms and provides **AI-powered hints, explanations, and solutions**—ensuring students never feel stuck.  
 
-## 🌟 Features
+Unlike traditional single-model tools, **Student Buddy is powered by [SambaNova Cloud API](https://cloud.sambanova.ai/)** and supports **multi-model switching**: when one model’s tokens are exhausted, you can switch to another available model, guaranteeing **uninterrupted assistance**.  
 
-- Browser extension integration with:
-  - LeetCode
-  - HackerRank
-  - CodeForces
-- AI-powered question assistance
-- Dark/Light theme support
-- Responsive design for mobile and desktop
-- Real-time problem-solving support
+---
 
-## 🏗️ Project Structure
+## 🌟 Features  
 
-The project consists of two main parts:
+- 🔗 **Seamless Integration** with:  
+  - LeetCode  
+  - HackerRank  
+  - CodeForces  
 
-### Frontend
+- 🤖 **AI Assistance**  
+  - Get instant hints, code explanations, and problem-solving strategies.  
+  - Powered by **SambaNova Cloud API**.  
 
-- Built with React + Vite + TypeScript
-- Shadcn/UI components for modern UI
-- Browser extension capabilities
-- Theme customization
+- 🔄 **Multi-Model Support**  
+  - Choose from multiple SambaNova models.  
+  - Automatic fallback if tokens for a model run out → smooth learning experience.  
 
-### Backend
+- 🎨 **Customizable UI**  
+  - Dark/Light theme support.  
+  - Modern design with [Shadcn/UI](https://ui.shadcn.com/).  
 
-- Node.js Express server
-- OpenAI integration for AI assistance
-- Error logging and monitoring
-- RESTful API architecture
+- ⚡ **Responsive & Lightweight**  
+  - Works across desktop and mobile resolutions.  
+  - Optimized for performance.  
 
-## 🚀 Getting Started
+---
 
-### Prerequisites
+## 📹 Demo  
 
-- Node.js (v18 or higher)
-- Bun package manager
-- Docker (for containerization)
+🎥 [Watch the Demo Video][(YOUR_VIDEO_LINK_HERE](https://cap.so/s/fm6fank1ma125yx))  
 
-### Installation
+---
 
-1. Clone the repository:
-```bash
-git clone https://github.com/IndraJeet-09/Student-buddy.git
-cd Student-buddy
-```
+## 🏗️ Project Structure  
 
-2. Backend Setup:
-```bash
-cd backend
-npm install
-# Create .env file with necessary environment variables
-npm run dev
-```
+**Frontend**  
+- React + Vite + TypeScript  
+- Shadcn/UI components  
+- Browser extension with theme customization  
 
-3. Frontend Setup:
-```bash
-cd frontend
-bun install
-bun run dev
-```
+**Backend**  
+- Node.js + Express server  
+- SambaNova API integration (multi-model)  
+- Error logging and monitoring  
+- RESTful APIs  
 
-4. Browser Extension Setup:
-```bash
-cd frontend
-bun run build
-# Load the dist folder as an unpacked extension in your browser
-```
+---
 
-## 🔧 Environment Variables
+## 🚀 Getting Started  
 
-### Backend
+### Prerequisites  
+- Node.js (v18 or higher)  
+- Bun package manager  
+- Docker (optional, for containerization)  
+
+### Installation  
+
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/IndraJeet-09/Student-buddy.git
+   cd Student-buddy
+   ```
+
+2. Backend Setup:  
+   ```bash
+   cd backend
+   npm install
+   # Create .env file with necessary environment variables
+   npm run dev
+   ```
+
+3. Frontend Setup:  
+   ```bash
+   cd frontend
+   bun install
+   bun run dev
+   ```
+
+4. Browser Extension Setup:  
+   ```bash
+   cd frontend
+   bun run build
+   # Open Chrome → chrome://extensions/ → Enable Developer Mode
+   # Click "Load unpacked" → Select the dist/ folder
+   ```
+
+---
+
+## 🔧 Environment Variables  
+
+### Backend (`/backend/.env`)  
 ```env
 PORT=3000
-OPENAI_API_KEY=your_api_key
+SAMBANOVA_API_KEY=your_api_key
+SAMBANOVA_MODEL=your_model
 ```
 
-### Frontend
+### Frontend (`/frontend/.env`)  
 ```env
 VITE_API_URL=http://localhost:3000
 ```
 
-## 🐳 Docker Support
+---
 
-Run the entire application using Docker Compose:
+## 🐳 Docker Support  
+
+Run the entire stack using Docker Compose:  
 
 ```bash
 docker-compose up
 ```
 
-## 📝 API Documentation
+---
 
-The backend provides RESTful APIs for:
-- Health checks
-- Question processing
-- AI assistance
+## 📝 API Endpoints  
 
-Base URL: `http://localhost:3000`
+The backend provides RESTful APIs for:  
+- ✅ Health checks  
+- ✅ AI question processing  
+- ✅ Model switching & fallback  
 
-## 🤝 Contributing
+Base URL: `http://localhost:3000`  
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+---
 
-## 📜 License
+## 📸 Screenshots  
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+*(Add your screenshots/GIFs here)*  
 
-## 👥 Authors
+---
 
-- IndraJeet-09
+## 🤝 Contributing  
 
-## 🙏 Acknowledgments
+1. Fork the repository  
+2. Create a feature branch (`git checkout -b feature/YourFeature`)  
+3. Commit changes (`git commit -m 'Add new feature'`)  
+4. Push (`git push origin feature/YourFeature`)  
+5. Open a Pull Request  
 
-- Thanks to OpenAI for AI capabilities
-- Shadcn/UI for beautiful components
-- All contributors and supporters
+---
+
+## 📜 License  
+
+Licensed under the MIT License – see the [LICENSE](LICENSE) file.  
+
+---
+
+## 👥 Author  
+
+- [IndraJeet-09](https://github.com/IndraJeet-09)  
+
+---
+
+## 🙏 Acknowledgments  
+
+- [SambaNova Cloud](https://cloud.sambanova.ai/) – AI model APIs  
+- [Shadcn/UI](https://ui.shadcn.com/) – UI components  
+- All contributors & supporters  
+
+---
+
+⚡ With **Student Buddy**, you’re never stuck alone on coding problems—your AI companion is always ready to help!  
+](https://cap.so/s/fm6fank1ma125yx)
