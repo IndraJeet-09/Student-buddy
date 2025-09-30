@@ -128,11 +128,20 @@ The backend provides RESTful APIs for:
 Base URL: `http://localhost:3000`  
 
 ---
+  
+## 📸 Screenshots
 
-## 📸 Screenshots  
+### Home Page
+![Home Page](assets/home.png)
 
-*(Add your screenshots/GIFs here)*  
+### Example Problem Assistance
+![AI Assistance in Action](assets/ai-assist.png)
 
+### Dark Theme
+![Dark Theme](assets/dark-mode.png)
+
+### Choose Model
+![Choose Model](assets/models.png)
 ---
 
 ## 🤝 Contributing  
