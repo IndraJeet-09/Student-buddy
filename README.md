@@ -1,4 +1,4 @@
-# 🎓 Student Buddy  
+[# 🎓 Student Buddy  
 
 **Student Buddy** is a Chrome Extension that acts as a smart learning companion for coding practice. It integrates directly with popular coding platforms and provides **AI-powered hints, explanations, and solutions**—ensuring students never feel stuck.  
 
@@ -34,8 +34,6 @@ Unlike traditional single-model tools, **Student Buddy is powered by [SambaNova 
 ## 📹 Demo  
 
 🎥 [Watch the Demo Video][(YOUR_VIDEO_LINK_HERE](https://cap.so/s/fm6fank1ma125yx))  
-
-> *(Replace with your YouTube/Loom link. You can also add a thumbnail image.)*  
 
 ---
 
@@ -168,3 +166,4 @@ Licensed under the MIT License – see the [LICENSE](LICENSE) file.
 ---
 
 ⚡ With **Student Buddy**, you’re never stuck alone on coding problems—your AI companion is always ready to help!  
+](https://cap.so/s/fm6fank1ma125yx)
